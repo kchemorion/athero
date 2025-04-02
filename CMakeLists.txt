@@ -13,6 +13,7 @@
 # -----------------------------------------------------------------------------
 cmake_minimum_required(VERSION 3.19.3)
 project(Atherosclerosis)
+set(CMAKE_BUILD_TYPE Debug) 
 
 # BioDynaMo curretly uses the C++14 standard.
 set(CMAKE_CXX_STANDARD 14)

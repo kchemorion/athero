@@ -15,25 +15,27 @@
 #define ATHEROSCLEROSIS_H_
 
 #include "biodynamo.h"
+#include "Agents.h"
+#include "AgentMotion.h"
+#include "Network.h"
+#include "LDLrule.h"
+#include "core/agent/cell.h"
+#include "core/environment/environment.h"
+#include "core/simulation.h"
+#include "core/param/param.h"
+#include "core/util/random.h"
+#include <cmath>
 
 namespace bdm {
 
-inline int Simulate(int argc, const char** argv) {
-  Simulation simulation(argc, argv);
-
-  // Define initial model - in this example: single cell at origin with a
-  // diameter of 30.0 (no unit associated).
-  auto* rm = simulation.GetResourceManager();
-  auto* cell = new Cell(30.0);
-  rm->AddAgent(cell);
-
-  // Run simulation for one timestep
-  simulation.GetScheduler()->Simulate(1);
-
-  std::cout << "Simulation completed successfully!" << std::endl;
-  return 0;
-}
+  void SetupNetworks(Simulation* simulation);
 
 }  // namespace bdm
 
 #endif  // ATHEROSCLEROSIS_H_
+
+
+
+
+
+

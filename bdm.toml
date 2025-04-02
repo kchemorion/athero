@@ -1,0 +1,32 @@
+[simulation]
+bound_space = true
+
+[visualization]
+  export = true
+  export_interval = 100
+  
+    [[visualize_agent]]
+      name = "EndothelialCell"
+      additional_data_members = ["cell_color_","diameter_"]
+      
+    [[visualize_agent]]
+      name = "SmoothMuscleCell"
+      additional_data_members = ["cell_color_","diameter_"]
+      
+    [[visualize_agent]]
+      name = "Monocyte"
+      additional_data_members = ["cell_color_","diameter_"]
+      
+    [[visualize_agent]]
+      name = "LDL"
+      additional_data_members = ["cell_color_","diameter_"]
+      
+    [[visualize_agent]]
+      name = "HDL"
+      additional_data_members = ["cell_color_","diameter_"]
+      
+    [[visualize_agent]]
+      name = "AAB"
+      additional_data_members = ["cell_color_","diameter_"]
+      
+ 
